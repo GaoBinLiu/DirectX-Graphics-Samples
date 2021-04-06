@@ -27,7 +27,7 @@ public:
     Model();
     ~Model();
 
-    void Clear();
+    virtual void Clear();
 
     enum
     {

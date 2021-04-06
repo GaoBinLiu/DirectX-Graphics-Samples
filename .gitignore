@@ -1,4 +1,4 @@
-﻿################################################################################
+################################################################################
 # This .gitignore file is manually maintained
 ################################################################################
 
@@ -18,3 +18,8 @@
 
 *.vcxproj.user
 *.opendb
+*.tlog
+*.idb
+*.pdb
+Samples/Desktop/D3D12Raytracing/src/DXRBaker/obj/
+Samples/Desktop/D3D12Raytracing/src/DXRBaker/x64/

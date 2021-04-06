@@ -840,9 +840,10 @@ void D3D12RaytracingMiniEngineSample::Startup( void )
     m_ExtraTextures[1] = g_ShadowBuffer.GetSRV();
 
 #define ASSET_DIRECTORY "../../../../../MiniEngine/ModelViewer/"
+//#define ASSET_DIRECTORY "../../../../../../../../MiniEngine/ModelViewer/"
     TextureManager::Initialize(ASSET_DIRECTORY L"Textures/");
     bool bModelLoadSuccess = m_Model.Load(ASSET_DIRECTORY "Models/sponza.h3d");
-    ASSERT(bModelLoadSuccess, "Failed to load model");
+    ASSERT(bModelLoadSuccess, "Failed to load model" ASSET_DIRECTORY "Models/sponza.h3d");
     ASSERT(m_Model.m_Header.meshCount > 0, "Model contains no meshes");
 
     // The caller of this function can override which materials are considered cutouts
